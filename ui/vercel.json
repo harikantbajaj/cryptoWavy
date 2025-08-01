@@ -11,5 +11,9 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "build": {
+    "env": {},
+    "command": "pnpm run vercel-build"
+  }
 }
