@@ -1,8 +1,6 @@
 Crypto Wavy
 
 
-🔗 Live Project: https://crypto-wavy-eta.vercel.app/
-
 Explore the waves of the crypto world with real-time insights, smart AI, and personalized portfolio tools.
 
 📘 About Crypto Wavy
