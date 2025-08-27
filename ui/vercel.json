@@ -13,7 +13,10 @@
     }
   ],
   "build": {
-    "env": {},
+    "env": {
+      "NEXT_PUBLIC_APPWRITE_PROJECT_ID": "@appwrite_project_id",
+      "GROQ_API_KEY": "@groq_api_key"
+    },
     "command": "pnpm run vercel-build"
   }
 }
