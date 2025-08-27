@@ -1,7 +1,7 @@
 from typing import List, cast
 
 from crypto.gecko import cg
-from crypto.state import AgentState
+from crypto.state import AgentState, Crypto
 from langchain_core.messages import AIMessage, ToolMessage
 from langchain_core.runnables import RunnableConfig
 from langchain_core.tools import tool
@@ -132,7 +132,7 @@ def delete_cryptos(crypto_ids: List[str], state: AgentState) -> str:
 
 
 @tool
-def update_cryptos(cryptos: List[dict], state: AgentState) -> str:
+def update_cryptos(cryptos: List[Crypto], state: AgentState) -> str:
     """Update one or many cryptocurrencies"""
     updated_count = 0
 
