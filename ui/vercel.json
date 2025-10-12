@@ -1,9 +1,11 @@
+
 {
   "version": 2,
   "buildCommand": "pnpm run vercel-build",
   "devCommand": "pnpm run dev",
   "installCommand": "pnpm install --no-frozen-lockfile",
   "framework": "nextjs",
+  "packageManager": "pnpm@10.0.0",
   "outputDirectory": ".next",
   "functions": {
     "api/*.ts": {
