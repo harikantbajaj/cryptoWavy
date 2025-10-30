@@ -104,8 +104,11 @@ Edit
 npm run dev
 Now visit http://localhost:3000 to explore Crypto Wavy locally 🌊
 
-🎬 Demo
-Watch the Preview
+ Demo
+<img width="1919" height="916" alt="Screenshot 2025-10-30 154943" src="https://github.com/user-attachments/assets/de5f1aae-4803-48ad-b01b-689c60433a29" />
+<img width="1299" height="382" alt="Screenshot 2025-10-30 155030" src="https://github.com/user-attachments/assets/c4f13547-aabc-4119-822c-4d771bf00773" />
+<img width="1294" height="746" alt="Screenshot 2025-10-30 155100" src="https://github.com/user-attachments/assets/5964e17c-5637-40a0-a11b-2690f7606d28" />
+<img width="1919" height="915" alt="Screenshot 2025-10-30 155119" src="https://github.com/user-attachments/assets/7c4bdf2e-cf0f-4786-ba2e-5c0f69e75c84" />
 
 📄 License
 Crypto Wavy is open-sourced under the MIT License.
