@@ -4,7 +4,6 @@ from crypto.gecko import cg
 from crypto.state import AgentState, Crypto
 from langchain_core.messages import AIMessage, ToolMessage
 from langchain_core.runnables import RunnableConfig
-from langchain_core.tools import tool
 
 
 async def cryptos_node(state: AgentState, config: RunnableConfig):
@@ -116,7 +115,6 @@ def handle_update_cryptos(state: AgentState, args: dict) -> str:
     return f"Updated {len(cryptos)} cryptocurrencies!"
 
 
-@tool
 def delete_cryptos(crypto_ids: List[str], state: AgentState) -> str:
     """Delete one or many cryptocurrencies"""
     deleted_count = 0
@@ -131,7 +129,6 @@ def delete_cryptos(crypto_ids: List[str], state: AgentState) -> str:
     return f"Deleted {deleted_count} cryptocurrencies!"
 
 
-@tool
 def update_cryptos(cryptos: List[Crypto], state: AgentState) -> str:
     """Update one or many cryptocurrencies"""
     updated_count = 0
@@ -146,14 +143,12 @@ def update_cryptos(cryptos: List[Crypto], state: AgentState) -> str:
     return f"Updated {updated_count} cryptocurrencies!"
 
 
-@tool
 def get_prices(coins: List[str]) -> List[dict]:
     """Fetch the latest prices for a list of cryptocurrencies from CoinGecko using pycoingecko."""
     prices = cg.get_price(ids=",".join(coins), vs_currencies="usd")
     return prices
 
 
-@tool
 def get_insights(coin: str) -> dict:
     """Fetch insights for a given cryptocurrency using the CoinGecko API."""
 

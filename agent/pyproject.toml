@@ -3,16 +3,17 @@ name = "crypto"
 version = "0.1.0"
 description = "Langgraph agent for crypto talks"
 authors = ["ChiragAgg5k <chiragaggarwal5k@gmail.com>"]
-readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
-langgraph = "^0.2.56"
+langgraph = "^0.4.0"
 langchain = "^0.3.10"
 pycoingecko = "^3.2.0"
 langchain-openai = "^0.2.11"
 python-dotenv = "^1.0.1"
 langchain-groq = "^0.2.1"
+langgraph-cli = "^0.4.4"
 
 
 [build-system]
